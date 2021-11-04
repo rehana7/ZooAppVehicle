@@ -8,41 +8,39 @@ package edu.nwmissouri.zoo04group;
  * Electric Car Class
  * @author Rehana Naguru
  */
-public class ElectricCar {
+public class ElectricCar extends Vehicle {
 
-    private ElectricCar(String rehana) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-/*    public ElectricCar(String name){
+    
+     public ElectricCar(String name){
        super(name);
     }
-  */  
- //   @Override
+
+    @Override
+    public void location(){
+        System.out.println("The path to travel is connected to GPS.");
+    } 
+    @Override
+    public void type(){
+        System.out.println("This is of land vehicle used to see Terrestrial Animals.");
+    } 
+ 
     public void model(){
         System.out.println("Model of your choosen car is :Toyoto.");
     }
-  //  @Override
+  
     public void make(){
         System.out.println("Make of car is Camry.");
     } 
     public void color(){
-        System.out.println("Red.");
+        System.out.println("The color of car you chosen is Red.");
     }
-    
-    public void location(){
-        System.out.println("The path to travel is connected to GPS.");
-    } 
-    
-    public void type(){
-        System.out.println("This is of land vehicle used to see Terrestrial Animals.");
-    } 
     public void Price() {
         double distance = 8.0;
-        int gasprice = 4;
-        double price = getVehicelPrice(distance, gasprice);
-        System.out.printf("The Price to rent Electric Car is \n", price );
+        double gasprice = 4;
+        double price = getVehiclePrice(distance, gasprice);
+        System.out.printf("Price to rent for ! %4.2f miles distance %4.2f$ gasprice is %4.2f $ \n", distance, gasprice,price );
     }
-     public double getVehicelPrice(double a, int b) { 
+     public double getVehiclePrice(double a, double b) { 
         
          return a*b;
     }

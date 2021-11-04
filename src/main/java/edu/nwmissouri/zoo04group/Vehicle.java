@@ -8,7 +8,7 @@ package edu.nwmissouri.zoo04group;
  *
  * @author Rehana Naguru
  */
-public class Vehicle {
+public abstract class Vehicle {
       /**
      * Vehicle color may be not known. 
      */

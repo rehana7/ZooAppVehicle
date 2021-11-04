@@ -25,7 +25,7 @@ public class ElectricCar extends Vehicle {
     } 
  
     public void model(){
-        System.out.println("Model of your choosen car is :Toyoto.");
+        System.out.println("Model of your chosen car is :Toyoto.");
     }
   
     public void make(){
@@ -34,7 +34,7 @@ public class ElectricCar extends Vehicle {
     public void color(){
         System.out.println("The color of car you chosen is Red.");
     }
-    public void Price() {
+    public void price() {
         double distance = 8.0;
         double gasprice = 4;
         double price = getVehiclePrice(distance, gasprice);
@@ -53,7 +53,7 @@ public class ElectricCar extends Vehicle {
         car.color();
         car.location();
         car.type();
-        car.Price();
+        car.price();
         
         }
         

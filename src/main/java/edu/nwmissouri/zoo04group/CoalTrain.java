@@ -12,10 +12,19 @@ import java.util.Scanner;
  */
 public class CoalTrain extends Vehicle{
     
+    /**
+     * CoalTrain constructor
+     * @param name -the name of this CoalTrain 
+     */
     public CoalTrain(String name){
         super(name);
     }
     
+    /**
+     * Method which returns name of vehicle
+     * @param name
+     * @return 
+     */
     public String getname(String name){
         String name1 = name;
         return name1;
@@ -26,23 +35,42 @@ public class CoalTrain extends Vehicle{
         System.out.println("you can track me by using GPRS");
     }
     
+    /**
+     * Method which depicts how the vehicle runs
+     */
     public void runType(){
         System.out.println("I run by using coal");
     }
     
+    /**
+     * Method which returns vehicle color
+     * @return 
+     */
     public VehicleColor getvehicleColour(){
         VehicleColor colour = VehicleColor.GREY;
         return colour;
     }
     
+    /**
+     * Method which depicts what's the purpose of vehicle
+     */
     public void purpose(){
         System.out.println("You can use me to roam in the zoo watching all the animals");
     }
     
+    /**
+     * Method which depicts speed of vehicle
+     */
     public void speed(){
         System.out.println("I travel slowly and my speed is 10kmph");
     }
     
+    /**
+     * method which calculates the cost to travel in vehicle
+     * @param distance
+     * @param count
+     * @return 
+     */
     public double cost(double distance,int count){
         double price = distance*count;
         return price;

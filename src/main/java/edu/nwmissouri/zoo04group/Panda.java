@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package edu.nwmissouri.zoo04group;
 
 /**
@@ -72,13 +68,12 @@ public class Panda extends Animal {
     public String fullname(String fname, String lname) {
         return fname + lname;
     }
-    
-            /**
-         * 
-         * @param args 
-         * main class for panda 
-         */
-        public static void main(String[] args) {
+
+    /**
+     *
+     * @param args main class for panda
+     */
+    public static void main(String[] args) {
         var panda = new Panda("Test");
         panda.speak();
         panda.move();

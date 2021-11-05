@@ -1,16 +1,18 @@
 package edu.nwmissouri.zoo04group;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
 // This is ZooAppVehicle test file
 
-@SpringBootTest
+
 class ZooAppVehicleApplicationTests {
     
 
 	@Test
-	void contextLoads() {
-	}
+	 public void shouldAnswerWithTrue() {
+        assertTrue(true);
+    }
+
 
 }

@@ -33,6 +33,9 @@ public class Scooter extends Vehicle {
         System.out.println(" Displacement: 150cc\n Engine type: single cylinder\n MaxPower:2000rpm");
     }
 
+    /**
+     * price describes the amount charged to rent a Scooter
+     */
     public void price() {
         double distance = 5.0;
         double gasprice = 8;

@@ -1,4 +1,5 @@
 package edu.nwmissouri.zoo04group;
+
 import java.lang.*;
 
 /**
@@ -16,7 +17,7 @@ public class Bus extends Vehicle {
      * color describes the color of vechile
      */
     public void color() {
-        System.out.println(" Color of bus.");
+        System.out.println("Color of bus.");
     }
 
     /**
@@ -50,7 +51,7 @@ public class Bus extends Vehicle {
      */
     public int numberOfTickets() {
 
-        System.out.println("no of tickets input by user ");
+//    System.out.println("no of tickets input by user ");
 //        Scanner userInput1 = new Scanner(System.in);
 //        System.out.println("How many tickets for the bus :");
 //        int noOfTickets = userInput1.nextInt();
@@ -67,7 +68,7 @@ public class Bus extends Vehicle {
         System.out.println("Prints the cost bases on seat and tickets");
         double cost = 0.0;
         cost = Math.round(ticketBase_price * this.numberOfTickets() * this.numberOfSeats() * 100.0) / 100.0;
-
+        System.out.println("Total cost is : " + cost);
         return cost;
     }
 
@@ -75,7 +76,7 @@ public class Bus extends Vehicle {
      *
      * @param args
      */
-     public static void main(String[] args) {
+    public static void main(String[] args) {
         var bus = new Bus("Preethi");
 
         bus.color();

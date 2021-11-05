@@ -53,7 +53,7 @@ public class ZooAppVehicle {
 
             // do the list prompt for the first time, loop back while valid
             do {
-                // Prompt for type: ask if they want to see animals
+                // Prompt for type: ask if they want to rent vehicle.
                 System.out.println();
                 System.out.println("What vehicle would you like to see?");
                 System.out.println("Enter a number to choose, 0 to exit.");
@@ -61,9 +61,9 @@ public class ZooAppVehicle {
                 System.out.print(" 1.Bike            ");
                 System.out.print(" 2.Bus          ");
                 System.out.print(" 3.Coal Train         ");
-                System.out.println(" 4.Electric Car                 ");
+                System.out.print(" 4.Electric Car    ");
                 System.out.print(" 5.Scooter             ");
-                System.out.print(" 6.Wheel Chair         ");
+                System.out.println(" 6.Wheel Chair         ");
                 try {
                     typeNumberInput = scanner.nextInt();
                 } catch (Exception ex) {
@@ -75,28 +75,28 @@ public class ZooAppVehicle {
                 // switch by VEHICLE type - autogenerate with ZooBuildSwitch.java
                 switch (typeNumberInput) {
                     case 1 -> {
-                     //   Bike.location();
-                     //   Bike.type();
+                     //   BikeGroup.create();
+                     //   BikeGroup.run();
                     }
                     case 2 -> {
-                     //   Bus.location();
-                     //   Bus.type();
+                     //   BusGroup.create();
+                     //   BusGroup.run();
                     }
                     case 3 -> {
-                     //   CoalTrain.location();
-                     //   CoalTrain.type();
+                     //   CoalTrainGroup.create();
+                     //   CoalTrainGroup.run();
                     }
                     case 4 -> {
                         ElectricCarGroup.create();
                         ElectricCarGroup.run();
                     }
                     case 5 -> {
-                     //   Scooter.location();
-                      //  Scooter.type();
+                     //   ScooterGroup.create();
+                      //  ScooterGroup.run();
                     }
                     case 6 -> {
-                    //    WheelChair.location();
-                    //    WheelChair.type();
+                    //    WheelChairGroup.create();
+                    //    WheelChairGroup.run();
                     }
                     default -> {
                     }
@@ -107,7 +107,80 @@ public class ZooAppVehicle {
             } while (isValid);
 
            
-        } // Prompt for adventures: ask if they want to try an adventure
+        } 
+        
+        // Prompt for topic: ask if they want to rent vehicles
+        System.out.println("Do you want to see animal (y/n)?");
+        var animalInterestInput = scanner.next();
+
+        // if yes, show list
+        if (animalInterestInput.toUpperCase().startsWith("Y")) {
+
+            // declare an int for the animal type number input
+            int typeNumberInput;
+
+            // declare a boolean for isValid
+            boolean isValid;
+
+            // do the list prompt for the first time, loop back while valid
+            do {
+                // Prompt for type: ask if they want to see animals
+                System.out.println();
+                System.out.println("Now you are ready to see animals.");
+                System.out.println("What animal would you like to see?");
+                System.out.println("Enter a number to choose, 0 to exit.");
+
+                System.out.print(" 1.Arvicolinae        ");
+                System.out.print(" 2.Cat          ");
+                System.out.print(" 3.HarpSeal        ");
+                System.out.print(" 4.Panda         ");
+                System.out.print(" 5.Squirrel        ");
+                System.out.println(" 6.Walrus         ");
+                try {
+                    typeNumberInput = scanner.nextInt();
+                } catch (Exception ex) {
+                    typeNumberInput = 0;
+                }
+
+                isValid = typeNumberInput >= 1 && typeNumberInput <= NUMBER_VEHICLE_TYPES;
+
+                // switch by animal type - autogenerate with ZooBuildSwitch.java
+                switch (typeNumberInput) {
+                    case 1 -> {
+                     //   ArvicolinaeGroup.create();
+                     //   ArvicolinaeGroup.run();
+                    }
+                    case 2 -> {
+                     //   CatGroup.create();
+                     //   CatGroup.run();
+                    }
+                    case 3 -> {
+                        HarpSealGroup.create();
+                        HarpSealGroup.run();
+                    }
+                    case 4 -> {
+                    //    PandaGroup.create();
+                    //    PandaGroup.run();
+                    }
+                    case 5 -> {
+                     //   SquirrelGroup.create();
+                      //  SquirrelGroup.run();
+                    }
+                    case 6 -> {
+                    //    WalrusGroup.create();
+                    //    WalrusGroup.run();
+                    }
+                    default -> {
+                    }
+
+                }
+
+                // while the input is valid, we loop back
+            } while (isValid);
+
+           
+        } 
+        // Prompt for adventures: ask if they want to try an adventure
          //    System.out.println("Do you want to go on an adven (y/n)?");
         //        var adventureInterestInput = scanner.next();
         //        if (adventureInterestInput.toUpperCase().startsWith("Y")) {

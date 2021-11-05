@@ -14,7 +14,7 @@ public class ElectricCar extends Vehicle {
      public ElectricCar(String name){
        super(name);
     }
-
+    
     @Override
     public void location(){
         System.out.println("The path to travel is connected to GPS.");

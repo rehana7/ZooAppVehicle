@@ -5,10 +5,13 @@
 package edu.nwmissouri.zoo04group;
 
 /**
+ * Animal gender options
+ * 
+ * Illustrates enumerated types (simple Java enum)
+ * Good for attributes selected from a drop-down list
+ * enumerated type for gender
  *
  * @author Rehana Naguru 
- * 
- * enumerated type for gender
  */
  
 public enum AnimalGender {

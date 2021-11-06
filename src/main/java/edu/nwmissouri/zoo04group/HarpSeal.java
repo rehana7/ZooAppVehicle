@@ -33,14 +33,15 @@ public class HarpSeal extends Animal{
     public void funfacts(){
         System.out.println("I am HarpSeal, I am more migratory and I can travel more than 3100 miles.");
     }
-    
+    // location method
     public void location(){
         System.out.println("I am native to northern part of Arctic Ocean and Atlantic Ocean.");
     } 
     
     public void food(){
         System.out.println("I eat many types of fish and invertibrates.");
-    } 
+    }  
+    // calculate method to calculate the addition of two numbers
     public void calculate() {
         double p = 5.0;
         int q = 4;

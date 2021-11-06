@@ -5,7 +5,8 @@
 package edu.nwmissouri.zoo04group;
 
 /**
- *
+ *  Animal super class for traits shared by all animals. Abstract class 
+ * general animal - only specific types.
  * @author Rehana Naguru
  */
 public abstract class Animal { 

@@ -5,44 +5,47 @@
 package edu.nwmissouri.zoo04group;
 
 /**
- * Electric Car Class
+ * Electric Car Class (derived subclass of the superclass Vehicle)
  * @author Rehana Naguru
  */
-public class ElectricCar {
+public class ElectricCar extends Vehicle {
 
-    private ElectricCar(String rehana) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-/*    public ElectricCar(String name){
+     /*
+    ElectricCar Constructor 
+    @param name -the name of this ElectricCar
+    */
+     public ElectricCar(String name){
        super(name);
     }
-  */  
- //   @Override
-    public void model(){
-        System.out.println("Model of your choosen car is :Toyoto.");
-    }
-  //  @Override
-    public void make(){
-        System.out.println("Make of car is Camry.");
-    } 
-    public void color(){
-        System.out.println("Red.");
-    }
     
+    @Override
     public void location(){
         System.out.println("The path to travel is connected to GPS.");
     } 
-    
+    @Override
     public void type(){
         System.out.println("This is of land vehicle used to see Terrestrial Animals.");
     } 
-    public void Price() {
-        double distance = 8.0;
-        int gasprice = 4;
-        double price = getVehicelPrice(distance, gasprice);
-        System.out.printf("The Price to rent Electric Car is \n", price );
+ 
+    public void model(){
+        System.out.println("Model of your chosen car is :Toyoto.");
     }
-     public double getVehicelPrice(double a, int b) { 
+    // make method
+    public void make(){
+        System.out.println("Make of car is Camry.");
+    }  
+    // color method
+    public void color(){
+        System.out.println("The color of car you chosen is Red.");
+    } 
+    // price method to calculate the rent price.
+    public void price() {
+        double distance = 8.0;
+        double gasprice = 4;
+        double price = getVehiclePrice(distance, gasprice);
+        System.out.printf("Price to rent for ! %4.2f miles distance %4.2f$ gasprice is %4.2f $ \n", distance, gasprice,price );
+    }
+     public double getVehiclePrice(double a, double b) { 
         
          return a*b;
     }
@@ -55,7 +58,7 @@ public class ElectricCar {
         car.color();
         car.location();
         car.type();
-        car.Price();
+        car.price();
         
         }
         

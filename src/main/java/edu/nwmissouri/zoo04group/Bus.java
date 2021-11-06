@@ -17,7 +17,7 @@ public class Bus extends Vehicle {
      * color describes the color of vechile
      */
     public void color() {
-        System.out.println("Color of bus.");
+        System.out.println("Color of bus is Green .");
     }
 
     /**
@@ -25,7 +25,7 @@ public class Bus extends Vehicle {
      */
     @Override
     public void type() {
-        System.out.println("Type of Bus .");
+        System.out.println("Type of Bus is double decker.");
     }
 
     /**

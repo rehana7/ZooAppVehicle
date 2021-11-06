@@ -5,7 +5,7 @@
 package edu.nwmissouri.zoo04group;
 
 /**
- *
+ * Wheelchair class,derived subclass from the superclass Vehicle)
  * @author Rehaman Naguru Abdur
  */
 public class WheelChair extends Vehicle{

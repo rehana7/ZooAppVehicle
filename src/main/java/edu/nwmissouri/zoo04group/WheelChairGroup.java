@@ -7,7 +7,7 @@ package edu.nwmissouri.zoo04group;
 import java.util.ArrayList;
 
 /**
- *
+ * Provides methods to create and run a group of Wheelchairs
  * @author REHAMAN NAGURU ABDUR
  */
 public class WheelChairGroup {

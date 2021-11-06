@@ -3,9 +3,10 @@ package edu.nwmissouri.zoo04group;
 import java.lang.*;
 
 /**
- *
+ * Bus class the extends Vehicle sClass
  * @author Preethi
  */
+
 public class Bus extends Vehicle {
 
     public Bus(String name) {
@@ -14,7 +15,7 @@ public class Bus extends Vehicle {
     private static final double ticketBase_price = 5.00;
 
     /**
-     * color describes the color of vechile
+     * color describes the color of vehicle
      */
     public void color() {
         System.out.println("Color of bus is Green .");

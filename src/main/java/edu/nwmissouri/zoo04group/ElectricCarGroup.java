@@ -7,7 +7,7 @@ package edu.nwmissouri.zoo04group;
 import java.util.ArrayList;
 
 /**
- *
+ * Provides methods to create and run a group of ElectricCars
  * @author Rehana Naguru
  */
 public class ElectricCarGroup {

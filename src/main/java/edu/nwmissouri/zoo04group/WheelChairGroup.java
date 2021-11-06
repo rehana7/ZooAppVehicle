@@ -28,7 +28,7 @@ public class WheelChairGroup {
     }
 
     /**
-     * Run (simulate) the group doing things
+     * Enumarated types for donation for wheel chairs
      */ 
     public enum Donate {
        ManualWheelChairs,

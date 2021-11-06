@@ -5,12 +5,15 @@
 package edu.nwmissouri.zoo04group;
 
 /**
- * Electric Car Class
+ * Electric Car Class (derived subclass of the superclass Vehicle)
  * @author Rehana Naguru
  */
 public class ElectricCar extends Vehicle {
 
-    
+     /*
+    ElectricCar Constructor 
+    @param name -the name of this ElectricCar
+    */
      public ElectricCar(String name){
        super(name);
     }
@@ -27,13 +30,15 @@ public class ElectricCar extends Vehicle {
     public void model(){
         System.out.println("Model of your chosen car is :Toyoto.");
     }
-  
+    // make method
     public void make(){
         System.out.println("Make of car is Camry.");
-    } 
+    }  
+    // color method
     public void color(){
         System.out.println("The color of car you chosen is Red.");
-    }
+    } 
+    // price method to calculate the rent price.
     public void price() {
         double distance = 8.0;
         double gasprice = 4;

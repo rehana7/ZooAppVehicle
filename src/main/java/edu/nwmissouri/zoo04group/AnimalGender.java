@@ -10,7 +10,6 @@ package edu.nwmissouri.zoo04group;
  * Illustrates enumerated types (simple Java enum)
  * Good for attributes selected from a drop-down list
  * enumerated type for gender
- *
  * @author Rehana Naguru 
  */
  

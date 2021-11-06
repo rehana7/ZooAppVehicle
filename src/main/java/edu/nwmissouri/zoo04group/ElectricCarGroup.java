@@ -31,6 +31,7 @@ public class ElectricCarGroup {
     /** Illustrates enumerated types (simple Java enum)
      * Good for attributes selected from a drop-down list
      * Run (simulate) the group doing things 
+     * 
      */ 
     public enum Color {
        Red,

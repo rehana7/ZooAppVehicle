@@ -79,12 +79,12 @@ public class ZooAppVehicle {
                      //   BikeGroup.run();
                     }
                     case 2 -> {
-                     //   BusGroup.create();
-                     //   BusGroup.run();
+                        BusGroup.create();
+                        BusGroup.run();
                     }
                     case 3 -> {
-                     //   CoalTrainGroup.create();
-                     //   CoalTrainGroup.run();
+                        CoalTrainGroup.create();
+                        CoalTrainGroup.run();
                     }
                     case 4 -> {
                         ElectricCarGroup.create();
@@ -95,8 +95,8 @@ public class ZooAppVehicle {
                       //  ScooterGroup.run();
                     }
                     case 6 -> {
-                    //    WheelChairGroup.create();
-                    //    WheelChairGroup.run();
+                        WheelChairGroup.create();
+                        WheelChairGroup.run();
                     }
                     default -> {
                     }
@@ -159,16 +159,16 @@ public class ZooAppVehicle {
                         HarpSealGroup.run();
                     }
                     case 4 -> {
-                    //    PandaGroup.create();
-                    //    PandaGroup.run();
+                        PandaGroup.create();
+                        PandaGroup.run();
                     }
                     case 5 -> {
-                     //   SquirrelGroup.create();
-                      //  SquirrelGroup.run();
+                        SquirrelGroup.create();
+                        SquirrelGroup.run();
                     }
                     case 6 -> {
-                    //    WalrusGroup.create();
-                    //    WalrusGroup.run();
+                        WalrusGroup.create();
+                        WalrusGroup.run();
                     }
                     default -> {
                     }

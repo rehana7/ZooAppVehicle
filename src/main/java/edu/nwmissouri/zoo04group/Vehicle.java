@@ -5,7 +5,8 @@
 package edu.nwmissouri.zoo04group;
 
 /**
- *
+ * Vehicle super class for traits shared by all vehicles. Abstract class 
+ * general vehicle - only specific types. 
  * @author Rehana Naguru
  */
 public abstract class Vehicle {

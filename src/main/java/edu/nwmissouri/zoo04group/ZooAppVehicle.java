@@ -5,7 +5,7 @@
 package edu.nwmissouri.zoo04group;
 import java.util.Scanner;
 /**
- *
+ * ZooAppVehicle is a Zoo simulation created by 05FA21 Group04
  * @author Rehana Naguru
  */
 public class ZooAppVehicle {

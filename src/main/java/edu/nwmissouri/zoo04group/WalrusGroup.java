@@ -60,10 +60,10 @@ public class WalrusGroup {
     
     Donate d = Donate.AdoptAnimal;
         switch(d) {
-            case Food -> System.out.println("######Thank you for Donating food#######");
-            case Money -> System.out.println("$$$$$$$Thank you for Donating Money$$$$$$$$");
-            case ZooNeeds -> System.out.println("@@@@@@@@@Thank you for Donating Zoo Needs and Accesories@@@@@");
-            case AdoptAnimal -> System.out.println("********Thank you for your intrest in Adopting an animal*******");            
+            case Food: System.out.println("######Thank you for Donating food#######");
+            case Money: System.out.println("$$$$$$$Thank you for Donating Money$$$$$$$$");
+            case ZooNeeds: System.out.println("@@@@@@@@@Thank you for Donating Zoo Needs and Accesories@@@@@");
+            case AdoptAnimal: System.out.println("********Thank you for your intrest in Adopting an animal*******");            
         }
                 
  }

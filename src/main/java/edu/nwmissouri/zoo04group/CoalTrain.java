@@ -22,8 +22,8 @@ public class CoalTrain extends Vehicle{
     
     /**
      * Method which returns name of vehicle
-     * @param name
-     * @return 
+     * @param name - String name of train
+     * @return - name of train
      */
     public String getname(String name){
         String name1 = name;
@@ -44,7 +44,7 @@ public class CoalTrain extends Vehicle{
     
     /**
      * Method which returns vehicle color
-     * @return 
+     * @return - color of train
      */
     public VehicleColor getvehicleColour(){
         VehicleColor colour = VehicleColor.GREY;
@@ -67,9 +67,9 @@ public class CoalTrain extends Vehicle{
     
     /**
      * method which calculates the cost to travel in vehicle
-     * @param distance
-     * @param count
-     * @return 
+     * @param distance - distance traveled 
+     * @param count - number of passengers
+     * @return - cost
      */
     public double cost(double distance,int count){
         double price = distance*count;

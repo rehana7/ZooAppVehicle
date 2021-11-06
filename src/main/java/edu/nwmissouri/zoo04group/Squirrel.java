@@ -29,20 +29,29 @@ public class Squirrel extends Animal{
     
     /**
      * Method which defines type of animal with name
-     * @param name 
+     * @param name - String name of Squirrel
      */
     public void typeofAnimal(String name){
         System.out.println("Hey I am herbivores and my name is "+name+", I eat only plants ");
     }
     
+    /**
+     * Method which defines age of animal
+     */
     public void age(){
         System.out.println("My age is 6 years");
     }
     
+    /**
+     * Method which defines height of animal
+     */
     public void height(){
         System.out.println("My height is 14.3 cm");
     }
     
+    /**
+     * Method which defines weight of animal
+     */
     public void weight(){
         System.out.println("My weight is 16 lbs");
     }
@@ -58,6 +67,9 @@ public class Squirrel extends Animal{
         return height + weight;
     }
     
+    /**
+     * Method which defines animal is disabled or not
+     */
     public void isDisabled(){
         System.out.println("Are u kidding !, I am perfectly alright");
     }
@@ -72,17 +84,23 @@ public class Squirrel extends Animal{
         System.out.println("I move with four legs");
     }
     
+    /**
+     * Method which defines how much time animal sleeps
+     */
     public void sleep(){
         System.out.println("I njoy my sleep, I sleep for 10 hours");
     }
     
+    /**
+     * Method which defines gender of animal 
+     */
     public void gender(){
         AnimalGender G = AnimalGender.FEMALE;
         System.out.println("I am "+G);
     }
     
     /**
-     * Method void which multiplies a & b
+     * Method which multiplies two numbers
      */
     public void functionMultiply(){
         int a = 10;

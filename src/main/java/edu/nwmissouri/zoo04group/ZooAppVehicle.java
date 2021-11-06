@@ -74,31 +74,31 @@ public class ZooAppVehicle {
 
                 // switch by VEHICLE type - autogenerate with ZooBuildSwitch.java
                 switch (typeNumberInput) {
-                    case 1 -> {
+                    case 1 : {
                      //   BikeGroup.create();
                      //   BikeGroup.run();
                     }
-                    case 2 -> {
+                    case 2 : {
                         BusGroup.create();
                         BusGroup.run();
                     }
-                    case 3 -> {
+                    case 3 : {
                         CoalTrainGroup.create();
                         CoalTrainGroup.run();
                     }
-                    case 4 -> {
+                    case 4 : {
                         ElectricCarGroup.create();
                         ElectricCarGroup.run();
                     }
-                    case 5 -> {
+                    case 5 : {
                      //   ScooterGroup.create();
                       //  ScooterGroup.run();
                     }
-                    case 6 -> {
+                    case 6 : {
                         WheelChairGroup.create();
                         WheelChairGroup.run();
                     }
-                    default -> {
+                    default : {
                     }
 
                 }
@@ -146,31 +146,31 @@ public class ZooAppVehicle {
 
                 // switch by animal type - autogenerate with ZooBuildSwitch.java
                 switch (typeNumberInput) {
-                    case 1 -> {
+                    case 1 : {
                      //   ArvicolinaeGroup.create();
                      //   ArvicolinaeGroup.run();
                     }
-                    case 2 -> {
+                    case 2 : {
                      //   CatGroup.create();
                      //   CatGroup.run();
                     }
-                    case 3 -> {
+                    case 3 : {
                         HarpSealGroup.create();
                         HarpSealGroup.run();
                     }
-                    case 4 -> {
+                    case 4 : {
                         PandaGroup.create();
                         PandaGroup.run();
                     }
-                    case 5 -> {
+                    case 5 : {
                         SquirrelGroup.create();
                         SquirrelGroup.run();
                     }
-                    case 6 -> {
+                    case 6 : {
                         WalrusGroup.create();
                         WalrusGroup.run();
                     }
-                    default -> {
+                    default : {
                     }
 
                 }

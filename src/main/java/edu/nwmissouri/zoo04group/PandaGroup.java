@@ -7,8 +7,8 @@ package edu.nwmissouri.zoo04group;
 import java.util.ArrayList;
 
 /**
- *
- * @author s545236
+ * Provides methods to create and run a group of Pandas
+ * @author Preethi Jadhav
  */
 public class PandaGroup {
         private static ArrayList<Panda> myPandaGroup;

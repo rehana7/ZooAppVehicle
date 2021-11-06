@@ -3,7 +3,7 @@ package edu.nwmissouri.zoo04group;
 import java.lang.*;
 
 /**
- * Bus class the extends Vehicle sClass
+ * Bus class the extends Vehicle Class
  * @author Preethi
  */
 

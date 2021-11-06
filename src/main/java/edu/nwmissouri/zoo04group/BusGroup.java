@@ -6,7 +6,7 @@ package edu.nwmissouri.zoo04group;
 import java.util.ArrayList;
 
 /**
- *
+ * Provides methods to create and run a group of Zoo Buses
  * @author Preethi Jadhav
  */
 public class BusGroup {

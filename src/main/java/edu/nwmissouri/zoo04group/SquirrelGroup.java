@@ -28,8 +28,8 @@ public class SquirrelGroup {
     }
 
     /**
-     * Run (simulate) the group doing things
-     */ 
+      * Enumerated animals choice of animal
+      */
     public enum Animals {
        Cow,
        HarpSeal,
@@ -37,6 +37,10 @@ public class SquirrelGroup {
        Squirrel,
        Duck
     }
+    
+    /**
+     * Run (simulate) the group doing things
+     */ 
     public static void run() {
         System.out.println("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
         System.out.println("Look at the Squirrel!");

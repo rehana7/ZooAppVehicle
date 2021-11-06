@@ -26,15 +26,19 @@ public class CoalTrainGroup {
         return myGroup.size();
     }
 
-    /**
-     * Run (simulate) the group doing things
-     */ 
+     /**
+      * Enumerated color choice of train
+      */
     public enum Color {
        Red,
        Grey,
        Blue,
        Black;
     }
+    
+    /**
+     * Run (simulate) the group doing things
+     */
     public static void run() {
         System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
         System.out.println("Look at the CoalTrain!");

@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package edu.nwmissouri.zoo04group;
 
 
@@ -77,31 +74,31 @@ public class ZooIndexController {
 
         switch (intID) {
 
-            case 1 -> {
+            case 1: {
              //   BikeGroup.create();
              //   BikeGroup.run();
             }
-            case 2 -> {
+            case 2 :{
               //   BusGroup.create();
               //   BusGroup.run();
             }
-            case 3 -> {
+            case 3 :{
               //   CoalTrainGroup.create();
               //   CoalTrainGroup.run();
             }
-            case 4 -> {
+            case 4 : {
                 ElectricCarGroup.create();
                 ElectricCarGroup.run();
             }
-            case 5 -> {
+            case 5 : {
              //   ScooterGroup.create();
              //  ScooterGroup.run();
             }
-            case 6 -> {
+            case 6 :{
              //    WheelChairGroup.create();
              //    WheelChairGroup.run();
             }
-            default -> {
+            default : {
             }
         }
 

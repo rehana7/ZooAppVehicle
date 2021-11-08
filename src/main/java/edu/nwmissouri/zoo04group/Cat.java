@@ -43,6 +43,9 @@ public class Cat extends Animal {
      public double getCatAddition(double valueOne, int valueTwo) {
         return valueOne + valueTwo;
     }
+     /**
+      * enumerated type for my catclass
+      */
 public enum Animal{
         Arvicolinae,
         Cat,

@@ -30,10 +30,9 @@ public class WalrusGroup {
         return myGroup.size();
     }
     
-    /*
-    *
-    * Enumarated types for Donation to zoo animals
-    */
+    /**
+     * Enumarated types for donation for Walrus
+     */ 
      public enum Donate {
        Food,
        Money,

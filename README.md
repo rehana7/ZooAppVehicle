@@ -7,7 +7,7 @@
 ### Nihkil Akarapu : I have joined the group
 #### Nikhil Akarapu's Repository link :
 ### Maneesh sake : I have forked the ZooAppVehicle
-#### Maneesh sake's Repository link :
+#### Maneesh sake's Repository link : https://github.com/ManeeshSake/ZooAppVehicle
 ### Preethi jadhav : I have cloned the ZooAppVehicle App
 #### Preethi jadhav's Repository link : https://github.com/preethi54/ZooAppVehicle
 ### Nithin Khumbham : I have forked the ZooAppVehicle

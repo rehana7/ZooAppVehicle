@@ -9,6 +9,6 @@
 ### Maneesh sake : I have forked the ZooAppVehicle
 #### Maneesh sake's Repository link :
 ### Preethi jadhav : I have cloned the ZooAppVehicle App
-#### Preethi jadhav's Repository link :
+#### Preethi jadhav's Repository link : https://github.com/preethi54/ZooAppVehicle
 ### Nithin Khumbham : I have forked the ZooAppVehicle
 #### Nithin Khumbham's Repository link :

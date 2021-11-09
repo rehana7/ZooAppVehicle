@@ -41,12 +41,9 @@ public class BusGroupTest {
      */
     @Test
     public void testCreate() {
-        System.out.println("create");
-        int expResult = 0;
-        int result = BusGroup.create();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        int expectedSize = 1;
+        int actualSize = BusGroup.create();
+        assertEquals(expectedSize, actualSize);
     }
 
     /**
@@ -54,10 +51,9 @@ public class BusGroupTest {
      */
     @Test
     public void testRun() {
-        System.out.println("run");
+        BusGroup.create();
         BusGroup.run();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertTrue(true);
     }
     
 }

@@ -75,8 +75,8 @@ public class ZooAppVehicle {
                 // switch by VEHICLE type - autogenerate with ZooBuildSwitch.java
                 switch (typeNumberInput) {
                     case 1 : {
-                     //   BikeGroup.create();
-                     //   BikeGroup.run();
+                        BikeGroup.create();
+                        BikeGroup.run();
                     }
                     case 2 : {
                         BusGroup.create();
@@ -91,8 +91,8 @@ public class ZooAppVehicle {
                         ElectricCarGroup.run();
                     }
                     case 5 : {
-                     //   ScooterGroup.create();
-                      //  ScooterGroup.run();
+                        ScooterGroup.create();
+                        ScooterGroup.run();
                     }
                     case 6 : {
                         WheelChairGroup.create();
@@ -147,12 +147,12 @@ public class ZooAppVehicle {
                 // switch by animal type - autogenerate with ZooBuildSwitch.java
                 switch (typeNumberInput) {
                     case 1 : {
-                     //   ArvicolinaeGroup.create();
-                     //   ArvicolinaeGroup.run();
+                        ArvicolinaeGroup.create();
+                        ArvicolinaeGroup.run();
                     }
                     case 2 : {
-                     //   CatGroup.create();
-                     //   CatGroup.run();
+                        CatGroup.create();
+                        CatGroup.run();
                     }
                     case 3 : {
                         HarpSealGroup.create();

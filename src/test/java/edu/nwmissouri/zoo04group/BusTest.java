@@ -88,22 +88,29 @@ public class BusTest {
     /**
      * Test of cost method, of class Bus.
      */
-//    @Test
-//    public void testCost() {
-//        // set up test, figure out expected by hand
-//        int numberOfTickets = 8;
-//        int numberOfSeats = 10;
-//        double ticketBase_price = 5.00;
-//        double expected = 400.0;
-//
-//        // call function to get the actual
-//        var b = new Bus("ZooBus");
-//        double cost = Math.round(ticketBase_price * numberOfTickets * numberOfSeats * 100.0) / 100.0;
-//        double actual = cost;
-//        System.out.println("Total cost is : 400.0");
-//        assertEquals(expected, actual);
-//    }
+    @Test
+    public void testCost() {
+        // set up test, figure out expected by hand
+        int numberOfTickets = 8;
+        int numberOfSeats = 10;
+        double ticketBase_price = 5.00;
+        double expected = 400.0;
 
-
+        // call function to get the actual
+        var b = new Bus("ZooBus");
+        double cost = Math.round(ticketBase_price * numberOfTickets * numberOfSeats * 100.0) / 100.0;
+        double actual = cost;
+        System.out.println("Total cost for 10 is :400.0");
+        assertEquals(expected, actual);
+    }
+    /**
+     * Test of main method, of class Bus.
+     */
+    @Test
+    public void testMain()   {
+        System.out.println("main");
+        String[] args = null;
+        Bus.main(args);
+    }
     
 }

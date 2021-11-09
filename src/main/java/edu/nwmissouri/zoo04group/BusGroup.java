@@ -27,7 +27,7 @@ public class BusGroup {
         return myBusGroup.size();
     }
         /**
-     * e num type of bus 
+     * enum type of bus 
      */
     public enum type{
         miniVan,

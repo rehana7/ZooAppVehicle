@@ -79,8 +79,9 @@ public class PandaTest {
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
     }
+
     /**
-     * Test of eat method, of class Panda.describes what panda likes to eat 
+     * Test of eat method, of class Panda.describes what panda likes to eat
      */
     @Test
     public void testEat() {
@@ -91,6 +92,7 @@ public class PandaTest {
         String actual = outputStreamCaptor.toString().trim();
         assertEquals(expected, actual);
     }
+
     /**
      * Test of full name method, of class Panda.
      */
@@ -105,5 +107,15 @@ public class PandaTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of main method, of class Panda.
+     */
+    @Test
+    public void testMain() {
+        System.out.println("main");
+        String[] args = null;
+        Panda.main(args);
     }
 }

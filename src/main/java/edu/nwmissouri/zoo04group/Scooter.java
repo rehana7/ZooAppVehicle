@@ -29,8 +29,8 @@ public class Scooter extends Vehicle {
      * specifications describes the specifications of Scooter
      */
     public void specifications() {
-        System.out.println(" specifications of Scooter are:");
-        System.out.println(" Displacement: 150cc\n Engine type: single cylinder\n MaxPower:2000rpm");
+       // System.out.println(" specifications of Scooter are:");
+        System.out.println(" specifications of Scooter are: Displacement: 150cc Engine type: single cylinder MaxPower:2000rpm");
     }
 
     /**

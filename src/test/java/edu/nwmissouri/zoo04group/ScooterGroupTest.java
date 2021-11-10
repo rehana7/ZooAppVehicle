@@ -37,7 +37,7 @@ public class ScooterGroupTest {
 
     @Test
     public void testCreate() {
-         System.out.println("create");
+       System.out.println("create");
         int expResult = 1;
         int result = ScooterGroup.create();
         assertEquals(expResult, result);

@@ -71,7 +71,7 @@ public class ScooterTest {
      */
     @Test
     public void testSpecifications() {
-        String expected = "specifications of Scooter are:\n Displacement: 150cc\n Engine type: single cylinder\n MaxPower:2000rpm";
+        String expected = "specifications of Scooter are: Displacement: 150cc Engine type: single cylinder MaxPower:2000rpm";
         var scooter = new Scooter("scoo");
         scooter.specifications();
         String actual = outputStreamCaptor.toString().trim();

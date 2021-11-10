@@ -18,7 +18,8 @@
 
 ### Preethi jadhav : I have cloned the ZooAppVehicle App
 #### Preethi jadhav's Repository link : https://github.com/preethi54/ZooAppVehicle
-##### Published at :
+##### Published at : https://preethi54.github.io/ZooAppVehicle/
+
 
 ### Nithin Khumbham : I have forked the ZooAppVehicle
 #### Nithin Khumbham's Repository link : https://github.com/nithinreddykumbham888/ZooAppVehicle

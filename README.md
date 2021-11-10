@@ -6,7 +6,7 @@
 
 ### Rehana Naguru : I have forked the ZooAppVehicle
 #### Rehana Naguru's Repository link : https://github.com/rehana7/ZooAppVehicle
-##### Published at :
+##### Published at :  https://rehana7.github.io/ZooAppVehicle/
 
 ### Nihkil Akarapu : I have joined the group
 #### Nikhil Akarapu's Repository link :  https://github.com/nikhil-akarapu/ZooAppVehicle

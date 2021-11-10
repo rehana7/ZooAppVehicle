@@ -3,7 +3,7 @@ package edu.nwmissouri.zoo04group;
 
 
 /**
- *
+ * Cat Animal class extends Animal Class
  * @author Maneesh Sake
  */
 public class Cat extends Animal {

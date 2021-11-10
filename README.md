@@ -3,11 +3,11 @@
 ### Rehaman Naguru Abdur : I have created the repo and cloned in my system
 #### Rehaman Naguru Abdur's Repository link : https://github.com/nagururehaman/ZooAppVehicle
 ### Rehana Naguru : I have forked the ZooAppVehicle
-#### Rehana Naguru's Repository link :
+#### Rehana Naguru's Repository link : https://github.com/rehana7/ZooAppVehicle
 ### Nihkil Akarapu : I have joined the group
 #### Nikhil Akarapu's Repository link :  https://github.com/nikhil-akarapu/ZooAppVehicle
 ### Maneesh sake : I have forked the ZooAppVehicle
-#### Maneesh sake's Repository link :
+#### Maneesh sake's Repository link : https://github.com/ManeeshSake/ZooAppVehicle
 ### Preethi jadhav : I have cloned the ZooAppVehicle App
 #### Preethi jadhav's Repository link : https://github.com/preethi54/ZooAppVehicle
 ### Nithin Khumbham : I have forked the ZooAppVehicle

@@ -10,7 +10,7 @@
 
 ### Nihkil Akarapu : I have joined the group
 #### Nikhil Akarapu's Repository link :  https://github.com/nikhil-akarapu/ZooAppVehicle
-##### Published at :
+##### Published at : https://nikhil-akarapu.github.io/ZooAppVehicle/
 
 ### Maneesh sake : I have forked the ZooAppVehicle
 #### Maneesh sake's Repository link : https://github.com/ManeeshSake/ZooAppVehicle

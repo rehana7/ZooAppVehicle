@@ -5,7 +5,7 @@
 ### Rehana Naguru : I have forked the ZooAppVehicle
 #### Rehana Naguru's Repository link : https://github.com/rehana7/ZooAppVehicle
 ### Nihkil Akarapu : I have joined the group
-#### Nikhil Akarapu's Repository link :
+#### Nikhil Akarapu's Repository link :  https://github.com/nikhil-akarapu/ZooAppVehicle
 ### Maneesh sake : I have forked the ZooAppVehicle
 #### Maneesh sake's Repository link : https://github.com/ManeeshSake/ZooAppVehicle
 ### Preethi jadhav : I have cloned the ZooAppVehicle App

@@ -14,16 +14,16 @@
     
     <!-- This application -->
  
-    <groupId>edu.nwmissouri</groupId>
-    <artifactId>Zoo04Lab</artifactId>
+    <groupId>edu.nwmissouri.zoo04group</groupId>
+    <artifactId>zoo04group</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Zoo04Lab</name>
+    <name>Zoo04Group</name>
     <description>Make our Zoo a Web app with Spring Boot (started with Spring Initialzr)</description>
     <url>https://zooweb.herokuapp.com/</url>
  
     <properties>
-        <start-class>edu.nwmissouri.zoo04lab.ZooWebApp</start-class>
+        <start-class>edu.nwmissouri.zoo04group.ZooWebApp</start-class>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -105,7 +105,7 @@
                 <executions>
                     <execution>
                         <configuration>
-                            <mainClass>edu.nwmissouri.zoo04lab.ZooWebApp</mainClass>
+                            <mainClass>edu.nwmissouri.zoo04group.ZooWebApp</mainClass>
                         </configuration>
                     </execution>
                 </executions>

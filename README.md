@@ -1,5 +1,7 @@
 # ZooAppVehicle
 ## API Docs Link : https://nagururehaman.github.io/ZooAppVehicle/docs/edu/nwmissouri/zoo04group/package-summary.html
+## Heroku Server Link : https://zooappvehicle.herokuapp.com/
+## UML Design Link : https://github.com/nagururehaman/ZooAppVehicle/blob/main/umldesign/ZooGroup04_page-0001%20(1).jpg
 ### Rehaman Naguru Abdur : I have created the repo and cloned in my system
 #### Rehaman Naguru Abdur's Repository link : https://github.com/nagururehaman/ZooAppVehicle
 ##### Published at : https://nagururehaman.github.io/ZooAppVehicle/

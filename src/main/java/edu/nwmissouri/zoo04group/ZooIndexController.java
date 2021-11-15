@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class ZooIndexController {
 
-    private static final String GREETING_MESSAGE = "Welcome to our 542 Zoo!";
+    private static final String GREETING_MESSAGE = "Welcome to our Zoo App vehicle Group4!";
     private static final String GOODBYE_MESSAGE = "Thank you for visiting our zoo!";
     private static final int NUMBER_ANIMAL_TYPES = 6;
 
@@ -75,28 +75,28 @@ public class ZooIndexController {
         switch (intID) {
 
             case 1: {
-             //   BikeGroup.create();
-             //   BikeGroup.run();
+                BikeGroup.create();
+                BikeGroup.run();
             }
             case 2 :{
-              //   BusGroup.create();
-              //   BusGroup.run();
+                 BusGroup.create();
+                 BusGroup.run();
             }
             case 3 :{
-              //   CoalTrainGroup.create();
-              //   CoalTrainGroup.run();
+                 CoalTrainGroup.create();
+                 CoalTrainGroup.run();
             }
             case 4 : {
                 ElectricCarGroup.create();
                 ElectricCarGroup.run();
             }
             case 5 : {
-             //   ScooterGroup.create();
-             //  ScooterGroup.run();
+                ScooterGroup.create();
+               ScooterGroup.run();
             }
             case 6 :{
-             //    WheelChairGroup.create();
-             //    WheelChairGroup.run();
+                 WheelChairGroup.create();
+                 WheelChairGroup.run();
             }
             default : {
             }

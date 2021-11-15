@@ -15,7 +15,7 @@
     <!-- This application -->
  
     <groupId>edu.nwmissouri.zoo04group</groupId>
-    <artifactId>zoo04group</artifactId>
+    <artifactId>Zoo04Group</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Zoo04Group</name>

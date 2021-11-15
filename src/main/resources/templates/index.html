@@ -20,35 +20,7 @@
     </head>
     <body>
         <div class="px-4 py-5 my-3 text-center">
-            <p th:text="'Hello, ' + ${name} + '!'" />
-            <h1 th:text="${greeting}" />
-            <p th:text="'We have ' + ${animalMap.size()} + ' animals. Take a look:'" />
-
-            <aside th:if = "${id} >= 1">
-                <hr>
-                <p  th:text="${id} + ' ' + ${animalMap.get( __${id}__)}">
-                <p th:text="${customAnimalGroup}" />
-            </aside>
-
-
-            <hr>
-
-            <main>
-                <th:block th:each="entry: ${animalMap}">
-                    <a th:href="@{/(id=${entry.key})}"> [[${entry.key}]]-[[${entry.value}]]</a> 
-                </th:block>
-            </main>
-
-            <hr>
-            <p><a href="/about">About Us</a></p> 
-            <p><a href="/">Return to Zoo</a></p> 
-            <hr>
-            <p></p> 
-            <p><a href="https://nagururehaman.github.io/ZooAppVehicle/docs/edu/nwmissouri/zoo04group/package-summary.html" class="btn btn-warning">Read our API</a></p> 
-            <p><a href=" https://zooappvehicle.herokuapp.com/" class="btn btn-primary">Deployed free on Heroku</a></p> 
-            <p><a href="https://github.com/nagururehaman/ZooAppVehicle" class="btn btn-success"><i class="fa fa-github"> </i> Check out our code on GitHub</a> </p>
-
-
+            <p>Testing</p>
         </div>
     </body>
 </html>

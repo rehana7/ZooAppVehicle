@@ -43,9 +43,9 @@ public class ZooIndexController {
         model.addAttribute("id", idParam);
         model.addAttribute("name", "World");
         model.addAttribute("greeting", GREETING_MESSAGE); 
-        model.addAttribute("vehicleMap", ZooBuildSwitch.getAllVehicleMap());
+        //model.addAttribute("vehicleMap", ZooBuildSwitch.getAllVehicleMap());
       //  model.addAttribute("animalMap", ZooBuildSwitch.getAllAnimalMap());
-        model.addAttribute("customVehicleGroup", getCustomVehicleGroup(idParam));
+        //model.addAttribute("customVehicleGroup", getCustomVehicleGroup(idParam));
       //  model.addAttribute("customAnimalGroup", getCustomAnimalGroup(idParam));
         // associated with index.hmtl in src/main/resources/templates
         return "index";

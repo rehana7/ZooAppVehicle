@@ -1,0 +1,28 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Nov 17, 2021, 8:27:19 AM
+    Author     : Rehana Naguru
+*/
+
+body {
+    overflow-x: hidden;
+    background-color: paleturquoise;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#contentMain {
+    padding-bottom: 3rem!important;
+}
+
+#contentMain div.selection-box {
+    padding: 10px;
+}

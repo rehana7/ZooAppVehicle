@@ -19,48 +19,47 @@
         </style>
     </head>
     <body> 
-       
+
         <div class ="px-4 py-5 my-5 text-center ">
-            <h1 Zoo App Vehicle -Zoo04Group />
+            <h1>Zoo App Vehicle -Zoo04Group </h1>
         </div> 
-            <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3 selection-box">
-                        <div class="selection-inner">
-                            <h6>Please choose the vehicle </h6>
-                            <hr>
-                            <form id="SelectVehicle">
-                           <select>
-                             <option value = "0">Bike</option>
-                             <option value="1">Bus</option>
-                             <option value="2">Coal Train</option>
-                             <option value="3">Electric Car</option> 
-                             <option value = "4">Scooter</option> 
-                             <option value = "5">Wheel Chair</option>
-                           </select>
-                       <input type="submit" value="Submit" class="myButton" class="btn btn-primary" onclick="selectVehicle()>
-                 
-
-                                    
-                              <br> <br>
-                                </div>
-                              </form>
-                        </div>
-                    </div> 
-                    <br><!-- comment -->
-                    <br><!-- comment --> 
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3 selection-box">
+                <div class="selection-inner">
+                    <h6>Please choose the vehicle </h6>
                     <hr>
-        <div class="px-4 py-5 my-3 text-center">
-          <p><a href="https://nagururehaman.github.io/ZooAppVehicle/docs/edu/nwmissouri/zoo04group/package-summary.html" class="btn btn-warning">Read our API</a></p> 
-            <p><a href="https://zooappvehicle.herokuapp.com/" class="btn btn-primary">Deployed free on Heroku</a></p> 
-            <p><a href=" https://github.com/nagururehaman/ZooAppVehicle" class="btn btn-success"><i class="fa fa-github"> </i> Check out our code on GitHub</a> </p>
+                    <form id="SelectVehicle">
+                        <select>
+                            <option value = "0">Bike</option>
+                            <option value="1">Bus</option>
+                            <option value="2">Coal Train</option>
+                            <option value="3">Electric Car</option> 
+                            <option value = "4">Scooter</option> 
+                            <option value = "5">Wheel Chair</option>
+                        </select>
+                        <input type="submit" value="Submit" class="myButton btn btn-primary" onclick="selectVehicle()">
+                    </form>
 
 
-        </div> 
-                        
-        
-        <script>
-            function selectVehicle() {
+                        <br> <br>
+                        </div>
+                </div>
+            </div> 
+            <br><!-- comment -->
+            <br><!-- comment --> 
+            <hr>
+            <div class="px-4 py-5 my-3 text-center">
+                <p><a href="https://nagururehaman.github.io/ZooAppVehicle/docs/edu/nwmissouri/zoo04group/package-summary.html" class="btn btn-warning">Read our API</a></p> 
+                <p><a href="https://zooappvehicle.herokuapp.com/" class="btn btn-primary">Deployed free on Heroku</a></p> 
+                <p><a href=" https://github.com/nagururehaman/ZooAppVehicle" class="btn btn-success"><i class="fa fa-github"> </i> Check out our code on GitHub</a> </p>
+
+
+            </div> 
+
+
+            <script>
+                function selectVehicle() {
                 console.log("Debug: Select vehicle is loading");
 
                 let eForm = document.getElementById("selectVehicle");
@@ -68,16 +67,16 @@
                 let vehcileType = "vehicle";
 
                 for (var i = 0, element; element = elements[i++]; ) {
-                    if (element.checked == true) {
-                        empType = element.value;
-                    }
+                if (element.checked == true) {
+                empType = element.value;
+                }
                 }
                 let newURL = "/vehicle?vehicleType=" + vehicleType;
 
                 console.log("Debug: Redirecting href to : " + newURL);
                 window.location.href = newURL;
-            }
-        </style>    
+                }
+            </script>    
     </body>
 </html>
 

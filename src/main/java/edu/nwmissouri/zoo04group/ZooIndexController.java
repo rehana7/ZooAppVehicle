@@ -43,10 +43,10 @@ public class ZooIndexController {
         model.addAttribute("id", idParam);
         model.addAttribute("name", "World");
         model.addAttribute("greeting", GREETING_MESSAGE); 
-        //model.addAttribute("vehicleMap", ZooBuildSwitch.getAllVehicleMap());
-      //  model.addAttribute("animalMap", ZooBuildSwitch.getAllAnimalMap());
-        //model.addAttribute("customVehicleGroup", getCustomVehicleGroup(idParam));
-      //  model.addAttribute("customAnimalGroup", getCustomAnimalGroup(idParam));
+        model.addAttribute("vehicleMap", ZooBuildSwitch.getAllVehicleMap());
+       // model.addAttribute("animalMap", ZooBuildSwitch.getAllAnimalMap());
+        model.addAttribute("customVehicleGroup", getCustomVehicleGroup(idParam));
+         // model.addAttribute("customAnimalGroup", getCustomAnimalGroup(idParam));
         // associated with index.hmtl in src/main/resources/templates
         return "index";
     }
@@ -74,31 +74,31 @@ public class ZooIndexController {
 
         switch (intID) {
 
-            case 1: {
+            case 1 -> {
                 BikeGroup.create();
                 BikeGroup.run();
             }
-            case 2 :{
+            case 2 ->{
                  BusGroup.create();
                  BusGroup.run();
             }
-            case 3 :{
+            case 3 -> {
                  CoalTrainGroup.create();
                  CoalTrainGroup.run();
             }
-            case 4 : {
+            case 4 -> {
                 ElectricCarGroup.create();
                 ElectricCarGroup.run();
             }
-            case 5 : {
+            case 5 -> {
                 ScooterGroup.create();
                ScooterGroup.run();
             }
-            case 6 :{
+            case 6 -> {
                  WheelChairGroup.create();
                  WheelChairGroup.run();
             }
-            default : {
+            default -> {
             }
         }
 

@@ -59,6 +59,7 @@
                              <option value = "4">Squirrel</option> 
                              <option value = "5">Walrus</option>
                            </select>
+                      
                        <input type="submit" value="Submit" class="myButton btn btn-primary" href="/">
                               </form>
 
@@ -114,6 +115,12 @@
                 }
                 let newURL = "/animal?animalType=" + animalType;
 
+                console.log("Debug: Redirecting href to : " + newURL);
+                window.location.href = newURL;
+            }
+        </script>    
+    </body>
+</html>
                 console.log("Debug: Redirecting href to : " + newURL);
                 window.location.href = newURL;
             }

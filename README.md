@@ -8,7 +8,7 @@
 ##### Published at : https://nagururehaman.github.io/ZooAppVehicle/
 
 ### Rehana Naguru : I have forked the ZooAppVehicle
-#### Rehana Naguru's Repository link : https://github.com/rehana7/ZooAppVehicle
+#### Rehana naguru's Repository link : https://github.com/rehana7/ZooAppVehicle
 ##### Published at :  https://rehana7.github.io/ZooAppVehicle/
 
 ### Nihkil Akarapu : I have joined the group

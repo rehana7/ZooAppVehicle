@@ -30,7 +30,7 @@
                             <h6>Please choose the vehicle </h6>
                             <hr>
                             <form id="SelectVehicle">
-                           <select>
+                           <select id="vehicleType" name="vehicles">
                              <option value = "0">Bike</option>
                              <option value="1">Bus</option>
                              <option value="2">Coal Train</option>
@@ -38,13 +38,12 @@
                              <option value = "4">Scooter</option> 
                              <option value = "5">Wheel Chair</option>
                            </select>
-                       <input type="submit" value="Submit" class="myButton" class="btn btn-primary" onclick="selectVehicle()>
-                 
+                       <input type="submit" value="Submit" class="myButton btn btn-primary" onclick="selectVehicle()">
+                              </form>
 
                                     
                               <br> <br>
                                 </div>
-                              </form>
                         </div>
                     </div> 
                     <br><!-- comment -->
@@ -65,8 +64,9 @@
 
                 let eForm = document.getElementById("selectVehicle");
                 let elements = eForm.elements;
-                let vehcileType = "vehicle";
-
+                let vehicleType = "vehicle";
+                
+                
                 for (var i = 0, element; element = elements[i++]; ) {
                     if (element.checked == true) {
                         empType = element.value;
@@ -77,7 +77,7 @@
                 console.log("Debug: Redirecting href to : " + newURL);
                 window.location.href = newURL;
             }
-        </style>    
+        </script>    
     </body>
 </html>
 

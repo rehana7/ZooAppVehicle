@@ -41,6 +41,31 @@ public class WheelChair extends Vehicle{
         wheel.wheelchairId();
         wheel.time();
         wheel.price();
+        
+        try {
+            int[] myNumbers = {1,0, 2, 3,7};
+            int num = Integer.parseInt ("Rehaman") ;
+            
+            System.out.println(myNumbers[10]);
+            int c = myNumbers[2]/myNumbers[1];
+            System.out.println(num);
+        }
+      catch (ArithmeticException e) {
+         System.out.println("ArithmeticException is handled");
+         
+      }
+       catch(ArrayIndexOutOfBoundsException e) {
+         System.out.println("Please enter an index number between 0 and 4");
+    } 
+        
+        catch(NumberFormatException e) {
+            System.out.println("Number format exception is handled");
         }
         
+        finally {
+            
+           System.out.println("All Exceptions handled");
+        }
+        
+     }
 }

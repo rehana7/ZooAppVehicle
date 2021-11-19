@@ -29,8 +29,8 @@ public class Scooter extends Vehicle {
      * specifications describes the specifications of Scooter
      */
     public void specifications() {
-        System.out.println(" specifications of Scooter are:");
-        System.out.println(" Displacement: 150cc\n Engine type: single cylinder\n MaxPower:2000rpm");
+       // System.out.println(" specifications of Scooter are:");
+        System.out.println(" specifications of Scooter are: Displacement: 150cc Engine type: single cylinder MaxPower:2000rpm");
     }
 
     /**
@@ -45,7 +45,16 @@ public class Scooter extends Vehicle {
 
     public double getVehiclePrice(double a, double b) {
 
-        return a * b;
+        try{
+            double c;
+            c=a/b;
+            return c;
+       }
+       catch(ArithmeticException e){
+           System.out.println("Please enter valid input");
+       }
+        
+        return 0;
     }
 
     /**
@@ -54,6 +63,17 @@ public class Scooter extends Vehicle {
      */
     public static void main(String[] args) {
         var scooter = new Scooter("nikhil");
+        
+        int yearsOfManufactures[] = { 2000, 0, 2010,2020, 2021 };
+        try {
+                System.out.print(yearsOfManufactures[5]);
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("\nPlease enter the valid input");
+        }
+        finally{
+         System.out.println("Thank you for visiting..");
+      }
 
         scooter.color();
         scooter.mileage();

@@ -21,7 +21,7 @@ public class BusGroup {
         
         Bus b = new Bus("Bus1");
         myBusGroup.add(b);
-        //BusGroup.add(new Panda("Bus2"));
+        //BusGroup.add(new Bus("Bus2"));
 
 
         return myBusGroup.size();
@@ -45,7 +45,7 @@ public class BusGroup {
         bus.type();
         bus.cost();
         });
-        System.out.println("Nice Pandas - that was fun!");
+        System.out.println("Nice Bus Ride - that was fun!");
         System.out.println("This Bus1 is of type  : "+BusGroup.type.miniVan);
         System.out.println("This Bus1 is of type  : "+BusGroup.type.miniBus);
         System.out.println("This Bus1 is of type  : "+BusGroup.type.doubleDecker);

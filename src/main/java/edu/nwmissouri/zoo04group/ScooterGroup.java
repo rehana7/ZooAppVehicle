@@ -9,32 +9,31 @@ import java.util.ArrayList;
  */
 public class ScooterGroup {
 
-    private static ArrayList<ScooterGroup> myGroup;
+    private static ArrayList<Scooter> myGroup;
 
     /**
      * Create a static group of Scooter
      *
      * @return the number of vehicles in the group
      */
-    public static int create(ScooterGroup Chethak) {
+    public static int create() {
         myGroup = new ArrayList<>();
-        Scooter obj = new Scooter("blue");
-        myGroup.add(Chethak);
+        
+        Scooter e = new Scooter("blu");
+        myGroup.add(e);
+      // myGroup.add(new ElectricCar("red"));
+      //  myGroup.add(new ElectricCar("grey"));
+
         return myGroup.size();
     }
 
-    private void price() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 
-    private void color() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 
-    private void make() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 
+   
     /**
      * Illustrates enumerated types (simple Java enum) Good for attributes
      * selected from a drop-down list Run (simulate) the group doing things
@@ -50,10 +49,13 @@ public class ScooterGroup {
     public static void run() {
         System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
         System.out.println("Look at the Scooter!");
-        myGroup.forEach(Scooter -> {
-            Scooter.make();
+         myGroup.forEach(Scooter -> {
+             Scooter.location();
+            Scooter.type();
+            Scooter.mileage();
             Scooter.color();
             Scooter.price();
+          
         });
         System.out.println("Nice Scooter - that was a nice ride!");
         System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> \n");

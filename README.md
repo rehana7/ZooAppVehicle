@@ -1,5 +1,6 @@
 # ZooAppVehicle
 ## API Docs Link : https://nagururehaman.github.io/ZooAppVehicle/docs/edu/nwmissouri/zoo04group/package-summary.html
+## API CODECOVERAGE : https://nagururehaman.github.io/ZooAppVehicleAPI/
 ## Heroku Server Link : https://zooappvehicle.herokuapp.com/
 ## UML Design Link : https://github.com/nagururehaman/ZooAppVehicle/blob/main/umldesign/ZooGroup04_page-0001%20(1).jpg
 ### Rehaman Naguru Abdur : I have created the repo and cloned in my system
@@ -7,7 +8,7 @@
 ##### Published at : https://nagururehaman.github.io/ZooAppVehicle/
 
 ### Rehana Naguru : I have forked the ZooAppVehicle
-#### Rehana Naguru's Repository link : https://github.com/rehana7/ZooAppVehicle
+#### Rehana naguru's Repository link : https://github.com/rehana7/ZooAppVehicle
 ##### Published at :  https://rehana7.github.io/ZooAppVehicle/
 
 ### Nihkil Akarapu : I have joined the group

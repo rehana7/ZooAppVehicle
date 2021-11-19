@@ -146,6 +146,10 @@ public class ZooBuildSwitch {
         return projectPathString;
     }
 
+    static Object getAllAnimalMap() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     
 
 }

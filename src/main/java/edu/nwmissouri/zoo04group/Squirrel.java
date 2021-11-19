@@ -4,6 +4,13 @@
  */
 package edu.nwmissouri.zoo04group;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 enum DaysofWeek{
     SUNDAY,
     MONDAY,
@@ -131,7 +138,51 @@ public class Squirrel extends Animal{
         if(DaysofWeek.SUNDAY == sunday){
             System.out.println("Today is Sunday, The weekend is gonna complete");
         }
+        
+        
+        //Exception handling
+        try {
+            File file1 = new File("Squirrel.txt");
+            try (Scanner scan2 = new Scanner(file1)) {
+                while (scan2.hasNext()) {
+                    String new1 = scan2.nextLine();
+                    //scan2.next();
+                    int new2 = scan2.nextInt();
+                    double new3 = scan2.nextDouble();
+                    double new4 = new2 * new3;
+                    System.out.println("==============================================");
+                    System.out.println("" + new1 + " worked " + new2 + " hours at " + new3 + " per hour and earned a total of $ " + new4);
+                }
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(Squirrel.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("Error");
+        }
+        
+        System.out.println("===============================================");
+        
+        try {
+            File file1 = new File("Squirrel1.txt");
+            try (Scanner scan2 = new Scanner(file1)) {
+                while (scan2.hasNext()) {
+                    String new1 = scan2.nextLine();
+                    //scan2.next();
+                    int new2 = scan2.nextInt();
+                    double new3 = scan2.nextDouble();
+                    double new4 = new2 * new3;
+                    System.out.println("==============================================");
+                    System.out.println("" + new1 + " worked " + new2 + " hours at " + new3 + " per hour and earned a total of $ " + new4);
+                }
+            }
+        } catch (IOException ex) {
+            System.out.println("ERROR toString():       " + ex.toString());
+            System.out.println("ERROR class:            " + ex.getClass());
+            System.out.println("ERROR localized message:" + ex.getClass());
+            System.out.println("ERROR message:          " + ex.getMessage());
+            System.out.println("ERROR stacktrace:     \n" + Arrays.toString(ex.getStackTrace()));
+        }
     }
+    
     
 }
     

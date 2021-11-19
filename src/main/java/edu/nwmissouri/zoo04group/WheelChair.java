@@ -42,6 +42,14 @@ public class WheelChair extends Vehicle{
         wheel.time();
         wheel.price();
         
+         
+         /*I have used try, catch, and finally blocks for  ArithmeticException, Array Out of bounds Exception, and Number format exception.
+
+ I have initialized the numbers in an array of size 5 and asked to print the array of index 10 where it will rise ArrayOutOfBoundException.
+I used array numbers for the division where it performs 2/0 results in undefined and rises Arithmetic Exception.
+I initialized the string of my name to an integer(int) and gave a print statement that will raise the Number format exception.
+
+.*/
         try {
             int[] myNumbers = {1,0, 2, 3,7};
             int num = Integer.parseInt ("Rehaman") ;

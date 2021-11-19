@@ -91,23 +91,24 @@ public class Bus extends Vehicle {
             arr[2] = 30;
             arr[3] = 40;
             System.out.println("Access element 5 :" + arr[5]);
-            
 
         } // matching ArrayIndexOutOfBoundsException
         catch (ArrayIndexOutOfBoundsException e) {
             // when trying to acces an element not available in array
             System.out.println("Exception thrown is  :" + e);
-        } 
-        try{
-            int val1 = 20 ;
-            int val2 = 0; 
-            int result = val1/val2;
+        }
+        try {
+            int val1 = 20;
+            int val2 = 0;
+            int result = val1 / val2;
             System.out.println("division result is :" + result);
 
         }// matching ArithmeticException
         catch (ArithmeticException ex) {
             // getMessage will print description of exception(here / by zero)
             System.out.println("Exception thrown is  :" + ex);
+        } finally {
+            System.out.println("***** Handled ArrayIndexOutOfBoundsException and ArithmeticException in Bus Class ****");
         }
 
     }

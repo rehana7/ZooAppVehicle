@@ -18,6 +18,7 @@ public class BikeGroup {
      * @return the number of vehicles in the group
      */
     public static int create() {
+        String name=getName();
         myGroup = new ArrayList<>();
         
         Bike b = new Bike("silver");
@@ -26,6 +27,10 @@ public class BikeGroup {
       //  myGroup.add(new Bike("black"));
 
         return myGroup.size();
+    }
+
+    private static String getName() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /** Illustrates enumerated types (simple Java enum)

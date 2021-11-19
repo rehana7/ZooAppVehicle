@@ -1,4 +1,8 @@
-# ZooAppVehicle
+# ZooAppVehicle 
+
+#### Exception handling link for HarpSeal :
+https://github.com/rehana7/ZooAppVehicle/blob/main/src/main/java/edu/nwmissouri/zoo04group/HarpSeal.java
+
 ## API Docs Link : https://nagururehaman.github.io/ZooAppVehicle/docs/edu/nwmissouri/zoo04group/package-summary.html
 ## API CODECOVERAGE : https://nagururehaman.github.io/ZooAppVehicleAPI/
 ## Heroku Server Link : https://zooappvehicle.herokuapp.com/

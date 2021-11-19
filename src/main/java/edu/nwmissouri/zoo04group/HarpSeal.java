@@ -75,17 +75,18 @@ public class HarpSeal extends Animal{
       int foodconsumedonaday=foodconsumed_pounds/totalnoofdays; 
       //declaring String of length 16 ;
      // catching Arithmetic Exception
-      }
+      } 
+     // Here, when I tried to divide a number by zero ,which throws an error. So I am handling this by catching the Arithmetic Exception. In this I am printing the output stating the name of exception.
      catch(ArithmeticException e)
       {
           System.out.println(e);
       }  
-      // Catching StringIndexOutOfBoundsException
+      // Catching StringIndexOutOfBoundsException :   In this I defined a string of length 16 characters. But I tried to call a character at 20 position , which throws an error. So I am catching this String Index Out Of Bounds Exception. 
       catch(StringIndexOutOfBoundsException e)
          { 
              System.out.println(e);
          }
-         
+     // Finally block will execute , even the exception is not caught.    
     finally {
             
            System.out.println("code executed successfully...");  

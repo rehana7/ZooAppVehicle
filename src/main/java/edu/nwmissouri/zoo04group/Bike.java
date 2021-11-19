@@ -26,26 +26,40 @@ package edu.nwmissouri.zoo04group;
     }
 
     
+     @Override
     public void location(){
         System.out.println(" travel is connected to GPS.");
     } 
     
     
+     @Override
     public void type(){
         System.out.println("This is of land vehicle used to see Terrestrial Animals.");
     } 
     
     public void Price() {
         double distancetravel = 6.0;
-        int fuelprice = 3;
+        int fuelprice = 0;
         double price = getVehicelPrice(distancetravel, fuelprice);
         System.out.printf("The Price to rent Bike is \n", price );
     }
      public double getVehicelPrice(double a, int b) { 
         
-         return a*b;
+         try{
+             
+                return a/b;
+            }
+         catch(Exception e)
+         {
+       
+           System.out.println("Please enter the valid input");
+         }
+         return 0;
     }
+   
     
+     
+     
     
      public static void main(String[] args) {
        var bike = new Bike("Maneesh");

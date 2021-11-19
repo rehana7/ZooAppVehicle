@@ -4,9 +4,9 @@ import java.lang.*;
 
 /**
  * Bus class the extends Vehicle Class
+ *
  * @author Preethi
  */
-
 public class Bus extends Vehicle {
 
     public Bus(String name) {
@@ -69,7 +69,7 @@ public class Bus extends Vehicle {
         System.out.println("Prints the cost bases on seat and tickets");
         double cost = 0.0;
         cost = Math.round(ticketBase_price * this.numberOfTickets() * this.numberOfSeats() * 100.0) / 100.0;
-        System.out.println("Total cost for "+this.numberOfSeats()+"seats is :" + cost);
+        System.out.println("Total cost for " + this.numberOfSeats() + "seats is :" + cost);
         return cost;
     }
 
@@ -83,6 +83,33 @@ public class Bus extends Vehicle {
         bus.color();
         bus.type();
         bus.cost();
+
+        try {
+            int arr[] = new int[4];
+            arr[0] = 10;
+            arr[1] = 20;
+            arr[2] = 30;
+            arr[3] = 40;
+            System.out.println("Access element 5 :" + arr[5]);
+
+        } // matching ArrayIndexOutOfBoundsException
+        catch (ArrayIndexOutOfBoundsException e) {
+            // when trying to acces an element not available in array
+            System.out.println("Exception thrown is  :" + e);
+        }
+        try {
+            int val1 = 20;
+            int val2 = 0;
+            int result = val1 / val2;
+            System.out.println("division result is :" + result);
+
+        }// matching ArithmeticException
+        catch (ArithmeticException ex) {
+            // getMessage will print description of exception(here / by zero)
+            System.out.println("Exception thrown is  :" + ex);
+        } finally {
+            System.out.println("***** Handled ArrayIndexOutOfBoundsException and ArithmeticException in Bus Class ****");
+        }
 
     }
 }

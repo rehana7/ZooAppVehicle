@@ -51,7 +51,9 @@ public class HarpSeal extends Animal{
      public double getHarpSealAdd(double a, int b) { 
         
          return a+b;
-    }
+    } 
+     
+     
     
     
      public static void main(String[] args) {
@@ -61,10 +63,42 @@ public class HarpSeal extends Animal{
         a.funfacts();
         a.location();
         a.food();
-        a.calculate();
+        a.calculate(); 
+        int foodconsumed_pounds =  70;
+        int totalnoofdays = 0; 
         
+     try{  
+      String p = "This is HarpSeal"; 
+      char q = p.charAt(20);
+      System.out.println(q);     
+      //code that may raise exception  
+      int foodconsumedonaday=foodconsumed_pounds/totalnoofdays; 
+      //declaring String of length 16 ;
+     // catching Arithmetic Exception
+      }
+     catch(ArithmeticException e)
+      {
+          System.out.println(e);
+      }  
+      // Catching StringIndexOutOfBoundsException
+      catch(StringIndexOutOfBoundsException e)
+         { 
+             System.out.println(e);
+         }
+         
+    finally {
+            
+           System.out.println("code executed successfully...");  
         }
+  
         
-} 
+     }
+   
+   
+   
+}     
+        
+        
+
 
 

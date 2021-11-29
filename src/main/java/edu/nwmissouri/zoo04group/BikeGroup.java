@@ -18,7 +18,6 @@ public class BikeGroup {
      * @return the number of vehicles in the group
      */
     public static int create() {
-        String name=getName();
         myGroup = new ArrayList<>();
         
         Bike b = new Bike("silver");

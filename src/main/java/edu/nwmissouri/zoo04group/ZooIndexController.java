@@ -1,7 +1,7 @@
 
 package edu.nwmissouri.zoo04group;
 
-
+import static edu.nwmissouri.zoo04group.ZooBuildSwitch.getAllAnimalMap;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -53,14 +53,14 @@ public class ZooIndexController {
      */
     @GetMapping(path = "/")
     public String index(
-            @RequestParam(name = "id", required = false, defaultValue = "0") String idParam,
+            @RequestParam(name = "vehicleType", required = false, defaultValue = "") String vehicleTypeParam,
+            @RequestParam(name = "animalType", required = false, defaultValue = "0") String idParam,
             Model model) {
         model.addAttribute("id", idParam);
-        model.addAttribute("name", "World");
-        model.addAttribute("greeting", GREETING_MESSAGE); 
        // model.addAttribute("vehicleMap", ZooBuildSwitch.getAllVehicleMap());
        // model.addAttribute("animalMap", ZooBuildSwitch.getAllAnimalMap());
-       // model.addAttribute("customVehicleGroup", getCustomVehicleGroup(idParam));
+        model.addAttribute("customVehicleGroup", getCustomVehicleGroup(vehicleTypeParam));
+        model.addAttribute("customAnimalGroup", getCustomAnimalGroup(idParam));
          // model.addAttribute("customAnimalGroup", getCustomAnimalGroup(idParam));
         // associated with index.hmtl in src/main/resources/templates
         return "index";
@@ -109,91 +109,12 @@ public class ZooIndexController {
         model.addAttribute("id", idParam);
         model.addAttribute("type", animalTypeParam);
      //   model.addAttribute("payment", getanimalPayment(animalTypeParam));
-        model.addAttribute("animalMap", getAllAnimalMap());
-        model.addAttribute("animalOutput", getAnimalOutput(idParam));
-     //   model.addAttribute("animalImage", getAnimalImageLink(idParam));
+       // model.addAttribute("animalMap", getAllAnimalMap());
+        //model.addAttribute("animalOutput", getAnimalOutput(idParam));
         return "animal";
     }
-
-       /**
-     * Dynamically calls an Animal's run() function by class name
-     * 
-     * @param className     The name of the Animal Class we want
-     * @param animalName    The animal's name required in its constructor
-     */
-    private static void callAnimalRun(String className, String animalName) {
-        String myPackage = "edu.nwmissouri.zoo04group";
-        Class[] cArg = new Class[1];
-        cArg[0] = String.class;
-        Class noparams[] = {};
-
-        String fullClass = myPackage + "." + className.replace(" ", "");
-        try {
-            Class<?> animalClass = Class.forName(fullClass);
-            Object obj = animalClass.getDeclaredConstructor(cArg).newInstance(animalName);
-            Method method = animalClass.getDeclaredMethod("run", noparams);
-            method.invoke(obj, null);
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }
-
-    /**
-     * Gets the output of the animal's run() function
-     * Puts it in its own output stream to return to the view
-     * 
-     * @param id    The index of the animal we want
-     * @return      The output of the run() function as a string from the printStream
-     */
-    private String getAnimalOutput(String id) {
-        // Create a stream to hold the output
-        var newStream = new ByteArrayOutputStream();
-        var newPrintStream = new PrintStream(newStream);
-
-        // IMPORTANT: Save the old System.out!
-        PrintStream old = System.out;
-        // Tell Java to use your special stream
-        System.setOut(newPrintStream);
-/*
-        var intID = Integer.parseInt(id);
-        var myList = Animal.getAnimalList();
-
-        if ((intID > 0) && (intID <= myList.length)) {
-            callAnimalRun(myList[intID - 1], myList[intID - 1] + " Tester");
-        }
-
-        // Put things back
-        System.out.flush();
-        System.setOut(old);
-        String stringOutput = newStream.toString();
-        return formatLineBreaks( stringOutput);
-    }
-
-    /**
-     * Returns a Map with key value pairs of our animals and their IDs
-     * 
-     * @return  The map of ID and animal key value pairs
-     */
- /*   public static Map<Integer, String> getAllAnimalMap() {
-        String[] animals = Animal.getAnimalList();
-        int animalCount = animals.length;
-        Map animalMap = Collections.synchronizedMap(new TreeMap<Integer, String>());
-
-        for (int n = 0; n < animalCount; n++) {
-            animalMap.put((n + 1), animals[n]);
-        }
-        return animalMap;
-    }
-
-   */
     
-    /**
-     * Returns a String for the name of an animal's Image
-     * 
-     * @param id    The ID of the index for the animal
-     * @return      Return the file name of the animal's image
-     */
-    private String getCustomVehicleGroup(String id) {
+    private String getCustomVehicleGroup(String vType) {
         // Create a stream to hold the output
         var newStream = new ByteArrayOutputStream();
         var newPrintStream = new PrintStream(newStream);
@@ -202,33 +123,77 @@ public class ZooIndexController {
         // Tell Java to use your special stream
         System.setOut(newPrintStream);
         
-        var intID = Integer.parseInt(id);
+        switch (vType) {
 
-        switch (intID) {
-
-            case 1 -> {
+            case "Bike" -> {
                 BikeGroup.create();
                 BikeGroup.run();
             }
-            case 2 ->{
+            case "Bus" ->{
                  BusGroup.create();
                  BusGroup.run();
             }
-            case 3 -> {
+            case "Coal Train" -> {
                  CoalTrainGroup.create();
                  CoalTrainGroup.run();
             }
-            case 4 -> {
+            case "Electric Car" -> {
                 ElectricCarGroup.create();
                 ElectricCarGroup.run();
             }
-            case 5 -> {
+            case "Scooter" -> {
                 ScooterGroup.create();
                ScooterGroup.run();
             }
-            case 6 -> {
+            case "Wheel Chair" -> {
                  WheelChairGroup.create();
                  WheelChairGroup.run();
+            }
+            default -> {
+            }
+        }
+
+        // Put things back
+        System.out.flush();
+        System.setOut(old);
+        String stringOutput = newStream.toString();
+        return stringOutput;
+    }
+    
+    private String getCustomAnimalGroup(String aType) {
+        // Create a stream to hold the output
+        var newStream = new ByteArrayOutputStream();
+        var newPrintStream = new PrintStream(newStream);
+        // IMPORTANT: Save the old System.out!
+        PrintStream old = System.out;
+        // Tell Java to use your special stream
+        System.setOut(newPrintStream);
+        
+        switch (aType) {
+
+            case "Arvicolinae" -> {
+                ArvicolinaeGroup.create();
+                ArvicolinaeGroup.run();
+            }
+            case "Cat" ->{
+                 CatGroup.create();
+                 CatGroup.run();
+            }
+            case "HarpSeal" -> {
+                 HarpSealGroup.create();
+                 HarpSealGroup.run();
+            }
+            case "Panda" -> {
+                PandaGroup.create();
+                PandaGroup.run();
+            }
+            case "Squirrel" -> {
+               SquirrelGroup.create();
+               SquirrelGroup.run();
+            }
+            case "Walrus" -> {
+                 WalrusGroup.create();
+                 WalrusGroup.run();
             }
             default -> {
             }

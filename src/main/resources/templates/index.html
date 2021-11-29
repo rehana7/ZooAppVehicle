@@ -1,130 +1,119 @@
 <!DOCTYPE HTML>
-
+<html>
     <head> 
         <title>ZooApp Vehicle</title> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        
-        <style>
-            main {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-        </style>
+        <link rel="stylesheet" th:href="@{/style/Style.css}">
     </head>
     <body> 
         <br>
         <h2  style="color:orange;text-align:center"> Welcome to ZooApp Vehicle- Zoo04group </h2>
         <br>
-            <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-2 selection-box">
-                        <div class="selection-inner">
-                            <h6>Please choose the vehicle </h6>
-                            <hr>
-                            <form id="SelectVehicle">
-                           <select id="vehicleType" name="vehicles">
-                             <option value = "0">Bike</option>
-                             <option value="1">Bus</option>
-                             <option value="2">Coal Train</option>
-                             <option value="3">Electric Car</option> 
-                             <option value = "4">Scooter</option> 
-                             <option value = "5">Wheel Chair</option>
-                           </select>  
-                           <p> The value of the option selected is:
-                           <span class="output"></span>
-                           </p>     
-                           <button type = "button" class="myButton btn btn-primary" onclick="selectVehicle()"> Submit </button>
-                     </form>
-
-                                    
-                           
-                                </div>
-                        </div>
-            
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3 selection-box">
-                        <div class="selection-inner">
-                            <h6>Please choose the animal </h6>
-                            <hr>
-                            <form id="SelectAnimal">
-                           <select id="animalType" name="animals">
-                             <option value = "0">Arvicolinae</option>
-                             <option value="1">Cat</option>
-                             <option value="2">HarpSeal</option>
-                             <option value="3">Panda</option> 
-                             <option value = "4">Squirrel</option> 
-                             <option value = "5">Walrus</option>
-                           </select>
-                             <button type = "button" class="myButton btn btn-primary" onclick="selectAnimal()"> Submit </button>
-                     
-                            </form>
-
-                                    
-                              </div>
-                        </div>
-                    </div> 
-                    <br> 
-                    <br>   
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2 selection-box">
+                <div class="selection-inner">
+                    <h6>Please choose the vehicle </h6>
                     <hr>
+                    <form id="SelectVehicle">
+                        <select id="vehicleType" name="vehicles">
+                            <option value = "0">Bike</option>
+                            <option value="1">Bus</option>
+                            <option value="2">Coal Train</option>
+                            <option value="3">Electric Car</option> 
+                            <option value = "4">Scooter</option> 
+                            <option value = "5">Wheel Chair</option>
+                        </select>  
+                        <p> The value of the option selected is:
+                            <span class="output"></span>
+                        </p>     
+                        <button type = "button" class="myButton btn btn-primary" onclick="selectVehicle()"> Submit </button>
+                    </form>
+
+
+
+                </div>
+            </div>
+
+            <div class="col-md-3"></div>
+            <div class="col-md-3 selection-box">
+                <div class="selection-inner">
+                    <h6>Please choose the animal </h6>
+                    <hr>
+                    <form id="SelectAnimal">
+                        <select id="animalType" name="animals">
+                            <option value = "0">Arvicolinae</option>
+                            <option value="1">Cat</option>
+                            <option value="2">HarpSeal</option>
+                            <option value="3">Panda</option> 
+                            <option value = "4">Squirrel</option> 
+                            <option value = "5">Walrus</option>
+                        </select>
+                        <button type="button" class="myButton btn btn-primary" onclick="selectAnimal()"> Submit </button>
+
+                    </form>
+
+
+                </div>
+            </div>
+        </div> 
+        <br> 
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <div th:if = "${vehicleTypeParam} != ''">
+                    <p th:utext="${customVehicleGroup}"></p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div th:if = "${id} != ''">
+                    <p th:utext="${customAnimalGroup}"></p>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <br>   
+        <hr>
         <div class="px-4 py-5 my-3 text-center">
-          <p><a href="https://nagururehaman.github.io/ZooAppVehicle/docs/edu/nwmissouri/zoo04group/package-summary.html" class="btn btn-warning">Read our API</a></p> 
+            <p><a href="https://nagururehaman.github.io/ZooAppVehicle/docs/edu/nwmissouri/zoo04group/package-summary.html" class="btn btn-warning">Read our API</a></p> 
             <p><a href="https://zooappvehicle.herokuapp.com/" class="btn btn-primary">Deployed free on Heroku</a></p> 
             <p><a href=" https://github.com/nagururehaman/ZooAppVehicle" class="btn btn-success"><i class="fa fa-github"> </i> Check out our code on GitHub</a> </p>
 
 
         </div> 
-                        
-        
-        <script> 
-            
+
+
+        <script>
             function selectVehicle() { 
                 console.log("Debug: Select vehicle is loading");
-                let eForm = document.getElementById("SelectVehicle");
-                let elements = eForm.elements;
-                let vehicleType = "Electric Car";
+                let selectElement = document.querySelector('#vehicleType');
+                vType = selectElement.options[selectElement.selectedIndex].text;
+
+                let newURL = "/?vehicleType=" + vType;
                 
-                selectElement = document.querySelector('#vehicleType');
-                output = selectElement.options[selectElement.selectedIndex].value;
-                document.querySelector('.output').textContent = output;
-            
-                let newURL = "/vehicle?vehicleType=" + vehicleType;
-
-                console.log("Debug: Redirecting href to : " + newURL);
+                //let paramters = "Get parameters somehow";
+                //if (parameters.id != null) {
+                //    newURL = newURL + "&id=" + parameters.id;
+                //}
+                
                 window.location.href = newURL;
-            
-               
+            }
 
-                }
-        
             function selectAnimal() {
                 console.log("Debug: Select animal is loading");
-                 
                 selectElement = document.querySelector('#animalType');
-                output = selectElement.options[selectElement.selectedIndex].value;
-                document.querySelector('.output').textContent = output;
-                
-                
-                let eForm = document.getElementById("selectAnimal");
-                let elements = eForm.elements;
-                let animalType = "animal";
-                
-                
-                
-                let newURL = "/animal?animalType=" + animalType;
+                aType = selectElement.options[selectElement.selectedIndex].text;
 
-                console.log("Debug: Redirecting href to : " + newURL);
+                let newURL = "/?animalType=" + aType;
+
                 window.location.href = newURL;
             }
         </script>    
-    </body>
-</html>
-             
     </body>
 </html>
 

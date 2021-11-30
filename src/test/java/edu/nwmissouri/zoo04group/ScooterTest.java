@@ -83,7 +83,7 @@ public class ScooterTest {
      */
     @Test
     public void testPrice() {
-        String expected = "Price to rent for ! 5.00 miles distance 8.00$ gasprice is 40.00 $";
+        String expected = "Price to rent for ! 5.00 miles distance 8.00$ gasprice is 0.63 $";
         var scooter = new Scooter("scoo");
         scooter.price();
         String actual = outputStreamCaptor.toString().trim();

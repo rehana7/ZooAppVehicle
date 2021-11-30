@@ -113,7 +113,7 @@ public class ZooIndexController {
         //model.addAttribute("animalOutput", getAnimalOutput(idParam));
         return "animal";
     }
-    
+    //  vehicle switch 
     private String getCustomVehicleGroup(String vType) {
         // Create a stream to hold the output
         var newStream = new ByteArrayOutputStream();
